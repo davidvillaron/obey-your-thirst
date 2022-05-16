@@ -1,0 +1,298 @@
+/* FOLLOW US SECTION */
+.follow-section-containner {
+  
+  background-color: #000000;
+  height: 130px;
+  z-index: 1;
+}
+.follow-us-container {
+  display: flex;
+  flex-direction: row;
+  height: 10vh;
+}
+.fo-left-line {
+  height: 100%;
+  width: 50%;
+  border-bottom: #6CC249 solid 5px;
+  margin-left: 100px;
+  margin-right:45px;
+  
+}
+
+.follow-text{
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  font-family: 'Coda', cursive;
+  color: #ffff;
+  white-space: nowrap;
+  padding: 40px 10px 0 10px;
+  transform: scale(1.5);
+}
+#follow-twitter-icon {
+  margin: 5px;
+  padding-left: 10px;
+}
+.fo-right-line{
+  height: 100%;
+  width: 50%;
+  border-bottom: #6CC249 solid 5px;
+  margin-right: 100px;
+  margin-left: 45px;
+}
+
+/* Carousel styling: */
+.image-carousel {
+  position: relative;
+}
+.carousel_img {
+  color: aliceblue;
+  background-color: #000000;
+  display: none;
+}
+.carousel-img-wrapper {
+  display: flex;
+  justify-content: center;
+}
+.c-image {
+  height: 500px;
+  width: auto;
+  margin: 25px 0 65px 0;
+}
+/* #sprite-ITW {
+  height: 500px;
+  width: auto;
+  margin: 25px 0 65px 0;
+} */
+/* display none on all images while displaying ONLY the selected */
+.carousel_img-slct {
+  display: block;
+}
+
+/* Styling the nav button of carousel */
+/* position the buttons at the button of image: */
+.carousel_nav {
+  width: 100%;
+  padding: 20px 0;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  text-align: center;
+}
+
+/* styling of the circle buttons */
+.carousel_button {
+  width: 10px;
+  height: 10px;
+  display: inline-block;
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 50%;
+  margin: 0 5px;
+  cursor: pointer;
+}
+/* differentiate when button clicked */
+.caro_btn-slct {
+  background: rgba(255, 255, 255, 0.9);
+}
+
+
+/* <!-- SPRITE WAY | playlist | podcast Section --> */
+.s-way-section {
+  background-image: url(/images/sprite_way_background.png);
+  object-fit: cover;
+  overflow: hidden;
+}
+.main-grid-container {
+  display: grid;
+  grid-column-gap: 40px;
+  padding: 3rem 0;
+  grid-template-columns: 1fr auto auto;
+}
+
+/* sprite way box */
+.sprite-way-box {
+  margin-left: 85px;
+  margin-right: 40px;
+  height: 80%;
+  display: flex;
+  flex-direction: column;
+}
+.sprite-way-img {
+  max-width: max-content;
+  flex-shrink: 1;
+}
+.sprite-way-box p {
+  text-align: center;
+  padding: 0 50px;
+  color: #127f31;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: bold;
+  font-style: italic;
+  max-width: 32em;
+}
+
+/* spotify */
+/* need to enclose this to another div, that way we can add our
+margins to 50 -x and 50 y axis to center the content. Can also use float or inline for icons*/
+.green-boxes{
+  background-color: #009639;
+  padding: 15px;
+  box-shadow: 2px 2px black; 
+}
+.inner-gb-container {
+  display: flex;
+  width: 80%;
+  margin: auto;
+  justify-content: center;
+ 
+}
+#spotify-icon-g, #podcast-icon-s {
+  padding-top: 5px;
+}
+
+.green-boxes h5 {
+  color: #ffff;
+  font-family: 'Arial Black';
+  font-size: 1.1em;
+  padding-left: 5px;
+  
+}
+
+/* podcast */
+#podcast-box {
+  margin-right: 40px;
+}
+#podcast-icon-s {
+  height: 25px;
+  width: auto;
+}
+
+
+/* <!-- sprite Footer --> */
+footer {
+  background-color: #009639;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;  
+}
+
+.main-content-container{
+  display: flex;
+  justify-content: space-evenly;
+  font-family: 'Arial Black', sans-serif;
+  margin: 80px 0;
+
+}
+
+.footer-singly-boxes {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.footer-titles {
+  padding: 25px 0;
+  color: #ffff;
+  font-style: italic;
+}
+
+.ft-fl {
+  display: flex;
+  flex-direction: column;
+}
+.ft-fl li {
+  padding: 0;
+}
+
+.ft-fl li a{
+  color: #ffff;
+  list-style: none;
+  text-decoration: none;
+  cursor: pointer;
+  font-size: .8em;
+ 
+}
+
+.footer-titles{
+  display: flex;
+  flex-direction: column;
+}
+
+
+.legal-section {
+  margin: auto;
+
+}
+.in-bx-copyright {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+  flex-wrap: wrap;
+}
+
+.email-container {
+  display: inline-flex;
+  justify-content: center;
+  width: 100%;
+  margin-bottom: 1rem;
+  color: #ffff;
+  font-size: 1.1em;
+  font-family: Arial Black, Geneva, Tahoma, sans-serif;
+}
+.email-box input {
+  border-radius: 10px;
+  padding: 5px 10px;
+
+}
+
+.submit-box {
+  text-align: center;
+  padding-top: 1rem;
+  
+}
+.submit-box input {
+  width: 100%;
+  padding: 5px 10px;
+  outline: none;
+  font-weight: 400;
+  border: 1.2px solid #9feb81;
+  font-size: 1em;
+  color: #b6f6ba;
+  letter-spacing: .15em;
+  background: transparent;
+  border-radius: 20px;
+  cursor: pointer;
+  position: relative;
+  transition: all 0.3s;
+  font-family: 'Montserrat', sans-serif;
+}
+.submit-box input {
+  background: #1f5824;
+}
+.submit-box input:hover {
+  background: #a7a534;
+}
+
+.cright-wrapper {
+  display: flex;
+  justify-content: center;
+  color: #ffff;
+  font-size: 1.2em;
+  font-family: 'Arial Black', sans-serif;
+}
+#copyright-icon {
+  padding-right: 5px;
+}
+
+.f-legal-links {
+  margin-top: 15px;
+  display: flex;
+  gap: 15px;
+  flex-wrap: wrap;
+}
+.f-legal-links a{
+  color: #ffff;
+  font-family: 'Arial Black', sans-serif;
+  font-size: .8em;
+  text-decoration: none;
+}

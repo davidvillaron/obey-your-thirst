@@ -1,0 +1,221 @@
+@import url('https://fonts.googleapis.com/css2?family=Coda:wght@800&family=Hind:wght@500;600&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,900&family=Work+Sans:wght@700;800&display=swap');
+
+* {
+  margin:0;
+  padding:0;
+  list-style: none;
+  }
+
+/* main navigation */
+header {
+  position: fixed;
+  width: 100%;
+  z-index: 10000;
+}
+.nav-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #009639;
+  height: 5.5rem;
+  width: 100%;
+}
+
+#sprite-logo {
+  height: 55px;
+  width: auto;
+}
+
+.sprite-links li {
+  color: #ffffff;
+  display: inline-block;
+  padding: 0px 15px;
+  font-family: Arial Black;
+  font-style: italic;
+}
+.nav-icons {
+  display: flex;
+  justify-content: center;
+  width: 5px;
+}
+.nav-icon-flex-container {
+  display: flex;
+  align-self: flex-end;
+  gap: 15px;
+}
+.sm-icons {
+  height: 22px;
+  width: auto;
+}
+
+.nav-icons-2 {
+  display: flex;
+  gap: 20px;
+}
+
+/* main sprite image */
+.hero-img-container{
+  background-image: url(/images/hero_new.jpg);
+  height: 50px;
+  padding: 290px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+/* Manifesto section */
+section .h1-container {
+  display: flex;
+  font-family: 'Hind', sans-serif;
+  justify-content: center;
+  align-items: center;
+  background-color: #000000;
+  color: #ffffff;
+  height: auto;
+  padding: 1rem 0;
+  text-align: center;
+  
+}
+.h1-manifesto {
+  font-size: 2.7em;
+  font-family: 'Work Sans', sans-serif;
+  font-weight: 800;
+  line-height: 1.1em;
+}
+.sub-h1 {
+  margin-top: 15px;
+  font-weight: 600;
+  font-size: 1.2em;
+  line-height: 1.1em;
+}
+.manifesto {
+  color: #6CC249;
+}
+
+#thirst-logo {
+  width: 100%;
+}
+
+/* Youtube video section */
+.main-sections-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  font-family: 'Montserrat', sans-serif;
+  font-size: .7em;
+  
+}
+/* The Artist */
+.artist-name {
+  color: #323433;
+  font-size: 1.8em;
+  
+}
+.artist-hashtags {
+  color: #009638;
+  font-size: 1.3em;
+  font-weight: bolder;
+  margin-bottom: 25px;
+}
+.flexbox-container {
+  width: 425px;
+  height: auto;
+}
+.green-comment {
+  height: 30px;
+  float: right;
+}
+
+#lemon-lime {
+  width: 100%;
+  margin-top: 2.7em;
+  transform: translateY(1.2rem);
+}
+
+
+/* <!-- Green Thirst Most Wanted Section --> */
+.green-b-grid {
+  background-image: url(/images/sprite_TMW_background.png);
+  background-color: #21dc40;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(9rem, 1fr));
+}
+.sprite-bottle-flex {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.bottle-thumbnails li {
+  list-style: none;
+  display: inline-block;
+  margin: 40px 20px;
+  cursor: pointer;
+  transition: 0.5s;
+}
+.bottle-thumbnails li:hover {
+  transform: translateY(25px);
+}
+.bottle-thumbnails li img {
+  max-width: 80px;
+}
+#green-sprite {
+  height: 95%;
+}
+
+.mini-sprite-w {
+  height: 75px;
+}
+
+.mini-sprite-r {
+  height: 75px;
+}
+
+.thirst-text-flex {
+  display: flex;
+  align-self: flex-end;
+  justify-content: center;
+  flex-direction: column;
+  margin-bottom: 25px;
+  text-align: center;
+  font-family: 'Coda', cursive;
+  color: #ffffff;
+  text-shadow: 5px 2.5px #095627;
+  font-size: 5.3em;
+  line-height: 1.05em;
+}
+
+/* Buy Now BUTTON Hover Effects */
+.buynow-container a {
+  text-decoration: none;
+  font-size: 20px;
+  font-family: 'Montserrat', sans-serif;
+  border: 3px solid #ffffff;
+  padding: 20px 40px;
+  transition: all 0.5s;
+  position: relative;
+  overflow: hidden;
+  text-shadow: none;
+}
+.buynow-container a::before {
+  content: 'Sprite!';
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: rgb(149, 241, 57);
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transform: all scale(5);
+  opacity: 0;
+  transition: all .8s;
+}
+a:hover:before {
+  transform: scale(1);
+  opacity: 1;
+}
+
